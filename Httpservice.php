@@ -3,8 +3,6 @@
 * HttpService is a class use for sending and recieving web services details
 *
 *
-* @category   houseViz
-* @package    Otssolutions
 * @version    1.0v
 * @since      18-10-2016
 * @Author     Himanshu Phoolwar
