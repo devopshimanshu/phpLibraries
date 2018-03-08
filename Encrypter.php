@@ -10,8 +10,6 @@
 * you get the number of character used in the salt and 
 * you can remove that salt. 
 *
-* @category   houseViz
-* @package    Otssolutions
 * @version    1.0v
 * @since      06-10-2016
 * @Author     Himanshu Phoolwar
