@@ -22,7 +22,6 @@ class Httpservice{
 */  
     public function httpPost($url,$params, $debug = null)
     {
-        $params['source']   =   'houseviz';
         $data_json = $this->jsonEncoder($params);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -35,7 +34,7 @@ class Httpservice{
             $info    = curl_getinfo($ch);
             $this->pr($info);
             $this->pr($response);
-            die('line number 40 at HttpService class from Houseviz ');
+            die('line number 37 at HttpService class');
         }
         curl_close($ch);
 		$response = $this->jsonDecode($response);
@@ -55,7 +54,7 @@ class Httpservice{
 */ 
     public function httpPut($url,$params, $debug = null)
     {
-		$params['source']   =   'houseviz';
+		
         $data_json = $this->jsonEncoder($params);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -68,7 +67,7 @@ class Httpservice{
             $info    = curl_getinfo($ch);
             $this->pr($info);
             $this->pr($response);
-            die('line number 72 at HttpService class from Houseviz');
+            die('line number 70 at HttpService class');
         }
         curl_close($ch);
         $response = $this->jsonDecode($response);
@@ -85,7 +84,6 @@ class Httpservice{
 	*/ 
     public function httpDelete($url,$params,$debug = null)
     {
-		$params['source']   =   'houseviz';
         $data_json = $this->jsonEncoder($params);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -98,7 +96,7 @@ class Httpservice{
             $info    = curl_getinfo($ch);
             $this->pr($info);
             $this->pr($response);
-            die('line number 98 at HttpService class from Houseviz');
+            die('line number 99 at HttpService class');
         }
         curl_close($ch);
 		$response = $this->jsonDecode($response);
@@ -117,7 +115,7 @@ class Httpservice{
             $info    = curl_getinfo($ch);
             $this->pr($info);
             $this->pr($response);
-            die('line number 117 at HttpService class from Houseviz');
+            die('line number 118 at HttpService class');
         }
         curl_close($ch);
 		$response = $this->jsonDecode($response);
